@@ -8,10 +8,15 @@ import Answers from './Answers';
 function Quiz(props) {
     function renderAnswers(key){
         return (
-            <Answers key={key.content} answerContent={key.content}
-            answerType={key.type} answer={props.answer}
-            questionId={props.questionId} nAnswerSelected={props.onAnswerSelected}></Answers>
-        );
+            <Answers
+              key={key.content}
+              answerContent={key.content}
+              answerType={key.type}
+              answer={props.answer}
+              questionId={props.questionId}
+              onAnswerSelected={props.onAnswerSelected}
+            />
+          );
     }
 
     return (
