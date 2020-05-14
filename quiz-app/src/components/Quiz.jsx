@@ -38,14 +38,21 @@ function Quiz(props) {
                                 <button className="btn-wrap btn-previous" >
                                     <span>Previous</span>
                                 </button>
-                            </div>) : (<div></div>)}
+                            </div>) : (<span></span>)}
                 
                         {props.counter < 4 ? (
                             <div className="button_cont" onClick={props.setNextQuestion} >
                                 <button className="btn-wrap btn-next" >
                                     <span>Next</span>
                                 </button>
-                            </div>) : (<div></div>)}
+                            </div>) : (<span></span>)}
+
+                        {props.counter === 4 ? (
+                            <div className="button_cont result-link" onClick={props.viewreults}>
+                                <button className="btn-wrap btn-next" >
+                                    <span>Submit</span>
+                                </button>
+                            </div>) : (<span></span>)}
                     </div>
                 </div>
             </div>

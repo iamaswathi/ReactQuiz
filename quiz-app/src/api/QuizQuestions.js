@@ -90,6 +90,7 @@ var quizQuestions = [
     {
       question: "How many rings are on the Olympic flag?",
       answerindex : 2,
+      answer: "5",
       answers: [
         {
           type: "IBM",
@@ -116,6 +117,7 @@ var quizQuestions = [
     {
       question: "Which of these animals does NOT appear in the Chinese zodiac?",
       answerindex : 1,
+      answer: "Bear",
       answers: [
         {
           type: "IBM",
@@ -142,6 +144,7 @@ var quizQuestions = [
     {
       question: "What is a pomelo?",
       answerindex : 3,
+      answer: "The largest citrus fruit",
       answers: [
         {
           type: "IBM",
@@ -168,6 +171,7 @@ var quizQuestions = [
     {
       question: "Are giant pandas a type of bear?",
       answerindex : 1,
+      answer: "Yes",
       answers: [
         {
           type: "IBM",
@@ -194,6 +198,7 @@ var quizQuestions = [
     {
       question: "What is the name of this symbol: ¶",
       answerindex : 2,
+      answer: "Pilcrow",
       answers: [
         {
           type: "IBM",

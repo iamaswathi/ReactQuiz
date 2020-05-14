@@ -98,18 +98,6 @@ body {
     font-weight: 100;
 }
 
-.next-btn {}
-
-.Previous-btn {}
-
-.result-link {
-    float: right;
-    color: #000000;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
 .status {
     color: green;
 }

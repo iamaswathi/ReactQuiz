@@ -3,7 +3,9 @@ import React from 'react';
 class Result extends React.Component {
     renderQuestins(){
       return  this.props.quizResult.map((_data,index) =>{
-          return <div className="list-grp">{_data.question} <br/>correct answer is option: {_data.answerindex} :  and you have selcted {this.props.answers[index]+1} { ((this.props.answers[index]+1) === _data.answerindex) ? (<span className="status">its correct !man</span>) : ''}</div>
+          return <div className="list-grp">{_data.question} <br/>
+          correct answer is option: {_data.answerindex} - {_data.answer}:  
+          and you have selcted {this.props.answers[index]+1} { ((this.props.answers[index]+1) === _data.answerindex) ? (<span className="status">its correct !man</span>) : ''}</div>
       })
     }
     render (){
