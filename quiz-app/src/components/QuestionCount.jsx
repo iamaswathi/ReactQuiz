@@ -1,17 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 function QuestionCount(props) {
     return (
         <div className="questionCount">
-            <p>Question <span>{props.counter}</span>/<span>{props.total}</span></p>
+            Question <span>{props.counter}</span> / <span>{props.total}</span>
+            {props.counter === 5 ? (
+                <button className="btn-wrap result-link" onClick={props.viewreults}>
+                    <i className="fa fa-dot-circle-o"></i>Submit
+                </button>) : (<div></div>)}
         </div>
     );
 }
-
-QuestionCount.propTypes = {
-    counter: PropTypes.number.isRequired,
-    total: PropTypes.number.isRequired,
-};
 
 export default QuestionCount;

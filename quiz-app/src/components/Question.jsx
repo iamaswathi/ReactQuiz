@@ -1,12 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 function Question(props) {
-    return <h3 className="rq-question">{props.content}</h3>
+    return <div>
+        <h4 className="question">{props.content}</h4>
+    </div>
 }
-
-Question.propTypes = {
-    content: PropTypes.string.isRequired
-};
 
 export default Question;

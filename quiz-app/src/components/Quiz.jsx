@@ -1,48 +1,57 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { CSSTransitionGroup } from 'react-transition-group';
 import Question from './Question';
 import QuestionCount from './QuestionCount';
-import Answers from './Answers';
+import AnswerOptions from './AnswerOptions';
 
 function Quiz(props) {
-    function renderAnswers(key){
+    function renderAnswerOptions(key,index) {
         return (
-            <Answers
-              key={key.content}
-              answerContent={key.content}
-              answerType={key.type}
-              answer={props.answer}
-              questionId={props.questionId}
-              onAnswerSelected={props.onAnswerSelected}
-            />
-          );
-    }
-
-    return (
-        <CSSTransitionGroup className="container" component="div"
-            transitionName="fade" transitionEnterTimeout={800}
-            transitionLeaveTimeout={500} transitionAppear
-            transitionAppearTimeout={500}>
-                <div key={props.questionId}>
-                    <QuestionCount counter={props.questionId} total={props.questionTotal} />
-                    <Question content={props.question} />
-                    <ul className="answers">
-                    {props.answers.map(renderAnswers)}
+          <AnswerOptions
+            index ={index}
+            key={key.content}
+            answerContent={key.content}
+            answerType={key.type}
+            answer={props.answer}
+            questionId={props.questionId}
+            selectedAnswer={props.selectedAnswer}
+            onAnswerSelected={props.onAnswerSelected}
+          />
+        );
+      }
+    
+    
+      return (
+          <div className="container">
+              <div className="row">
+                <div key={props.questionId} className="col-xs-12 quiz-story">
+                    <QuestionCount viewreults={props.viewreults}
+                    counter={props.questionId}
+                    total={props.questionTotal}
+                    />
+                    <Question  content={props.question} />
+                    <ul className="answerOptions">
+                    {props.answerOptions.map(renderAnswerOptions)}
                     </ul>
+                    <div className="bottom-footer" >
+                        {props.counter > 0 ? (
+                            <div className="button_cont" onClick={props.setPreviousQuestion} >
+                                <button className="btn-wrap btn-previous" >
+                                    <span>Previous</span>
+                                </button>
+                            </div>) : (<div></div>)}
+                
+                        {props.counter < 4 ? (
+                            <div className="button_cont" onClick={props.setNextQuestion} >
+                                <button className="btn-wrap btn-next" >
+                                    <span>Next</span>
+                                </button>
+                            </div>) : (<div></div>)}
+                    </div>
                 </div>
-        </CSSTransitionGroup>
-    );
+            </div>
+          </div>
+      );
 }
-
-Quiz.propTypes = {
-    answer: PropTypes.string.isRequired,
-    answers: PropTypes.array.isRequired,
-    question: PropTypes.string.isRequired,
-    questionId: PropTypes.number.isRequired,
-    questionTotal: PropTypes.number.isRequired,
-    onAnswerSelected: PropTypes.func.isRequired
-};
 
   
 export default Quiz;
