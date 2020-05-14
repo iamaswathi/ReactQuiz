@@ -104,8 +104,10 @@ body {
 
 .result-link {
     float: right;
-    /* background-color: green; */
     color: #000000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .status {

@@ -88,131 +88,131 @@
 
 var quizQuestions = [
     {
-      question: "What franchise would you rather play a game from?",
-      answerindex : 1,
+      question: "How many rings are on the Olympic flag?",
+      answerindex : 2,
       answers: [
         {
           type: "IBM",
-          content: "1. Halo",
+          content: "4",
           answer : false
         },
         {
           type: "amdocs",
-          content: "2. Pokemon",
+          content: "5",
           answer : false
         },
         {
           type: "Sony2",
-          content: "3. Uncharted1",
+          content: "7",
           answer : false
         },
         {
           type: "Sony1",
-          content: "4. Uncharted2",
+          content: "8",
           answer : false
         }
       ]
     },
     {
-      question: "Which console would you prefer to play with friends?",
+      question: "Which of these animals does NOT appear in the Chinese zodiac?",
       answerindex : 1,
       answers: [
         {
           type: "IBM",
-          content: "X-Box",
+          content: "Bear",
           answer : false
         },
         {
           type: "amdocs",
-          content: "amdocs 64",
+          content: "Rabbit",
           answer : false
         },
         {
           type: "Sony",
-          content: "Playstation 100",
+          content: "Dragon",
           answer : false
         },
         {
           type: "Sonyq",
-          content: "Playstation 1",
+          content: "Dog",
           answer : false
         }
       ]
     },
     {
-      question: "Which of these racing franchises would you prefer to play a game from?",
-      answerindex : 1,
+      question: "What is a pomelo?",
+      answerindex : 3,
       answers: [
         {
           type: "IBM",
-          content: "Forza",
+          content: "An old-fashioned punching bag",
           answer : false
         },
         {
           type: "amdocs",
-          content: "Mario Kart",
+          content: "A breed of dog",
           answer : false
         },
         {
           type: "Sony",
-          content: "Gran Turismo",
+          content: "The largest citrus fruit",
           answer : false
         },
         {
           type: "Sonyw",
-          content: "Playstation 1qq",
+          content: "A flower",
           answer : false
         }
       ]
     },
     {
-      question: "Which of these games do you think is best?",
+      question: "Are giant pandas a type of bear?",
       answerindex : 1,
       answers: [
         {
           type: "IBM",
-          content: "BioShock",
+          content: "Yes",
           answer : false
         },
         {
           type: "amdocs",
-          content: "The Legend of Zelda: Ocarina of Time",
+          content: "No",
           answer : false
         },
         {
           type: "Sony",
-          content: "Final Fantasy VII",
+          content: "",
           answer : false
         },
         {
           type: "Sonyr",
-          content: "Playstation 1",
+          content: "",
           answer : false
         }
       ]
     },
     {
-      question: "What console would you prefer to own?",
-      answerindex : 1,
+      question: "What is the name of this symbol: ¶",
+      answerindex : 2,
       answers: [
         {
           type: "IBM",
-          content: "X-Box One",
+          content: "Fermata",
           answer : false
         },
         {
           type: "amdocs",
-          content: "Wii U",
+          content: "Pilcrow",
           answer : false
         },
         {
           type: "Sony",
-          content: "Playstation 4",
+          content: "Interrobang",
           answer : false
         },
         {
           type: "Sonyqqå",
-          content: "Playstation11 1",
+          content: "Biltong",
           answer : false
         }
       ]
